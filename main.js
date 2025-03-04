@@ -32,6 +32,10 @@ function playMusic(){
     });
 }
 
+function undo(){
+    display.value = display.value.slice(0, -1);
+}
+
 window.addEventListener('DOMContentLoaded', (event) => {
     const audio = document.getElementById('background-music');
     audio.play().catch(error => {
