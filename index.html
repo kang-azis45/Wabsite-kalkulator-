@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <div id="calculator">
         <input id="display" readonly>
         <div id="keys">
@@ -30,6 +29,7 @@
             <button onclick="clearDisplay()" class="operator-btn">C</button>
             <button onclick="calculatePercent()" class="operator-btn">%</button>
             <button onclick="playMusic()" class="operator-btn small-font">Play Music</button>
+            <button onclick="undo()" class="operator-btn small-font">Undo</button>
         </div>
         <audio id="background-music" src="music1.mp3" loop></audio>
     </div>
